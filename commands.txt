@@ -4,3 +4,4 @@ git diff (doesn't show changes on non-pushed files on github)
 git add my.html (indexing or add)
 git add script.js (indexing or add)
 or git add -A (to push All files)
+git commit
