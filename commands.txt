@@ -1,3 +1,23 @@
+git config user.name "Vasya Pupkin"
+gi config user.email vasya@gmail.com
+git config --global user.name "Vasya Pupkin"
+git config --global user.email vasya@gmail.com
+cat .git/config
+git config --list (in C:\Users\user\.gitconfig)
+git config --list --global
+git config --unset user.name
+git config --unset user.email
+git config --remove-section user
+
+ALIAS
+e.g. git config --global alias.c config
+	  git c --list (c===config = abbreviation)
+e.g. git config --global alias.c 'config --global'
+
+git config -h
+git help config (help about config)
+
+COMMANDS
 git clone (my https adress from github)
 git status
 git diff (doesn't show changes on non-pushed files on github)
@@ -5,3 +25,4 @@ git add my.html (indexing or add)
 git add script.js (indexing or add)
 or git add -A (to push All files)
 git commit
+git push (to see all on github)
