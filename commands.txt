@@ -1,0 +1,6 @@
+git clone (my https adress from github)
+git status
+git diff (doesn't show changes on non-pushed files on github)
+git add my.html (indexing or add)
+git add script.js (indexing or add)
+or git add -A (to push All files)
