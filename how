@@ -1,0 +1,31 @@
+[33mcommit 13945cafbc5e3ca8aef67d417ca6bb708a8caaea[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m)[m
+Author: German Solovyev <germanium312@gmail.com>
+Date:   Wed Nov 2 19:30:36 2022 +0300
+
+    Header
+    
+    *Fixed!
+
+[1mdiff --git a/my.html b/my.html[m
+[1mindex 9dc7b89..2076ec6 100644[m
+[1m--- a/my.html[m
+[1m+++ b/my.html[m
+[36m@@ -1,5 +1,6 @@[m
+ <!DOCTYPE html>[m
+ <html lang="en">[m
+[32m+[m
+ <head>[m
+ 	<meta charset="UTF-8">[m
+ 	<meta http-equiv="X-UA-Compatible" content="IE=edge">[m
+[36m@@ -7,7 +8,9 @@[m
+ 	<title>test git</title>[m
+ 	<script src="scripts.js"></script>[m
+ </head>[m
+[32m+[m
+ <body>[m
+[31m-	123[m
+[32m+[m	[32m123 Some text[m
+ </body>[m
+[32m+[m
+ </html>[m
+\ No newline at end of file[m

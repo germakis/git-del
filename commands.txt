@@ -28,3 +28,76 @@ git commit	  ()
 git push 	  (to see all on github)
 
 git init
+git show
+git show --pretty=fuller
+git commit --author='John Smith <john@me.com>' --date='...' (to change a commiter and date. Not an Author)
+
+(GIT_AUTHOR_NAME, GIT_AUTHOR_EMAIL, GIT_AUTHOR_DATE, GIT_COMMITTER_NAME, GIT_COMMITER_EMAIL, GIT_COMMITER_DATE)
+
+
+
+---------------------course_html-----------------------
+
+--. Добавить задачу - перейти к своему коду
+--. НЕ НАДО git remote add upstream [SSH]
+--. НЕ НАДО git remote -v
+--. git pull upstream master 
+(спулились файлы, которых не было.. Появился урок. Пушить нельзя)
+--. git status
+-- Перехожу в ветку мастер?... git checkout master  
+--. git checkout -b 01-button-solution (создаём новую ветку и переходим
+в неё. Всё. 
+Можно работать с файлами этой задачи)
+
+--. Когда сделали задачу.
+	 git status
+	 git add . или git add название файла
+	 git status
+--. git commit
+--. git status
+--. git push -u origin ветка 01-accordion-solution 
+(git push origin HEAD наверное не надо)
+!!!!!!! или а точнее git push -u origin ветка 01-accordion-solution
+( -u потому что этой ветки ЕЩЕ НЕТ в репозитории чистовика(?) и делаем это только один раз)
+-- При последующих изменениях просто git push (?)
+	  уже отсылаем на нашу активную ветку в форк
+-- или git config pull.rebase false для автослияния и git pull upstream master
+--. Переходим по ссылке в гите и создаем пулл реквест...
+	  и кидаю ссылку учителю.
+
+- Узнать какие всего ветки git branch
+- Перейти на ветку 				 git checkout название ветки
+- $ git checkout 01-button-solution
+	error: Your local changes to the following files would be overwritten by checkout:
+        03-lection1/01-button/index.html
+	Please commit your changes or stash them before you switch branches.
+	Aborting
+пишу 
+git reset --hard, 
+если не хочу сохранять локальные файлы. Я хотел спуллить с каждой ветки
+---------------------------------CSS-------------------------------
+em - от родителя
+rem - как em, только от заданного fz html.
+
+видео номер 3 39:07
+
+
+ПРОБЛЕМА: 
+$ git push
+fatal: The current branch 01-accordion-solution has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin 01-accordion-solution
+
+To have this happen automatically for branches without a tracking
+upstream, see 'push.autoSetupRemote' in 'git help config'.
+
+git push --set-upstream origin 01-accordion-solution
+
+Создал отображение главной страницы в ветке 01-index-page-2
+и хочу перекинуть в master.
+git checkout master
+git merge 01-index-page-2
+git push origin master
+
+git config pull.rebase false (то бишь слияние и по возможности сделай без конфликтов)
